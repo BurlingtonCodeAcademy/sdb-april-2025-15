@@ -34,3 +34,11 @@ let newStudents = students.forEach((student, index) => {
 console.log("students *after* forEach: ", students)
 
 console.log("newStudents `undefined`: ", newStudents)
+
+const prices = [10, 20, 30]
+
+const total = prices.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0)
+
+console.log("total: ", total)
