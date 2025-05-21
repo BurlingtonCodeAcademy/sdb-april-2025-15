@@ -58,3 +58,12 @@ const children = ages.filter((age) => {
 console.log("adults: ", adults)
 
 console.log("children: ", children)
+
+// find example
+const family = ["mother", "father", "sister", "brother"]
+
+const found = family.find((person) => {
+    return person === "mother";
+})
+
+console.log("found: ", found)
