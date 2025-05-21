@@ -26,9 +26,11 @@ let students = [
 
 console.log("students *before* forEach: ", students)
 
-students.forEach((student, index) => {
+let newStudents = students.forEach((student, index) => {
     // add the index to the student name
     students[index] = student + " " + index;
 })
 
 console.log("students *after* forEach: ", students)
+
+console.log("newStudents `undefined`: ", newStudents)
