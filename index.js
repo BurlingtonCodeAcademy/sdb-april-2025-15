@@ -35,6 +35,7 @@ console.log("students *after* forEach: ", students)
 
 console.log("newStudents `undefined`: ", newStudents)
 
+// reduce example
 const prices = [10, 20, 30]
 
 const total = prices.reduce((accumulator, currentValue) => {
@@ -42,3 +43,18 @@ const total = prices.reduce((accumulator, currentValue) => {
 }, 0)
 
 console.log("total: ", total)
+
+// filter example
+const ages = [12, 15, 18, 21, 25, 30]
+
+const adults = ages.filter((age) => {
+    return age >= 21;
+})
+
+const children = ages.filter((age) => {
+    return age < 21;
+})
+
+console.log("adults: ", adults)
+
+console.log("children: ", children)
